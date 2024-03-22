@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+#banner {
+    background-image: url('banner.jpg');
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: derecha 1s;
+
+}
+
+@keyframes derecha {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#contenedor1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+    animation: bajar 1s;
+
+}
+
+@keyframes bajar {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+nav {
+    display: flex;
+    column-gap: 25px;
+}
+
+nav>a {
+    color: #383737;
+    text-decoration: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#banner>h1 {
+    color: #3eb8a7;
+    font-size: 3rem;
+    margin-left: 2vw;
+}
+
+#boton {
+    margin-left: 2vw;
+    color: rgb(255, 255, 255);
+    background-color: #979797;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+
+}
+
+#about {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    background-color: #eceae5;
+    background-image: url('https://images.vexels.com/media/users/3/140073/isolated/preview/c5e33e3b974dfab8ea744b0153225de9-silueta-de-perro-negro.png');
+    background-repeat: no-repeat;
+    background-size: 65vh;
+    background-position: 5% center;
+    background-blend-mode: overlay;
+
+}
+
+#about > h1{
+    color: #432b1c;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#linea{
+    width: 80px;
+    height: 4px;
+    background-color: #3eb8a7;
+}
+
+#about > p{
+    width: 30%;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    border: 2px #3eb8a7 solid;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 18px;
+}
