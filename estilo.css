@@ -6,11 +6,15 @@
 }
 
 #banner {
-    background-image: url('banner.jpg');
-    height: 65vh;
+    background-image: url('pastel2.png');
+    background-size: 210vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     animation: derecha 1s;
 
 }
@@ -27,6 +31,10 @@
 }
 
 #contenedor1 {
+    background-image: url('kirby1mini.png');
+    background-repeat: no-repeat;
+    background-size: 8vh;
+    background-position: 8.7%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -60,8 +68,11 @@ html{
 }
 
 #banner>h1 {
-    color: #3eb8a7;
+    -webkit-text-stroke: 1px black;
+    color: #ffffff;
     font-size: 3rem;
+   text-transform: uppercase;
+   
     margin-left: 2vw;
 }
 
@@ -83,8 +94,8 @@ html{
     flex-direction: column;
     align-items: center;
     row-gap: 25px;
-    background-color: #eceae5;
-    background-image: url('https://images.vexels.com/media/users/3/140073/isolated/preview/c5e33e3b974dfab8ea744b0153225de9-silueta-de-perro-negro.png');
+    background-color: #f8ecf2;
+    background-image: url('kirby\ sombra.png');
     background-repeat: no-repeat;
     background-size: 65vh;
     background-position: 5% center;
@@ -116,3 +127,7 @@ button{
     border-radius: 20px;
     padding: 8px 18px;
 }
+#catalogo{
+    background-color: #f8ecf2;
+}
+
