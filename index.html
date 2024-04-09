@@ -6,50 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</html>
 </head>
 
 <body>
+
     <header>
-        <div id="contenedor1">
-
-            <h1>Waddlesteleria </h1>
-
-            <nav>
-                <a href="#about">Sobre nosotros</a>
-                <a href="menu.html" target="_self">Productos</a>
-                <a href="dogs.html">Pedidos</a>
-                <a href="#">Carrito</a>
-                <a href="#">Ubicacion</a>
-                <a href="#">Galeria</a>
-                <a href="#">Contactos</a>
-
+        <div id="navbar">
+            <div id="logotitle">
+                <h1 id="title"><a href="index.html">SweetKirby</a></h1>
+                <img src="kirby1mini.png" alt="logo.png" id="logo">
+            </div>
+            <nav id="navbar-brand">
+                <a href="#about" class="navbar-item">Nuestra Tienda</a>
+                <a href="menu.html" target="_self" class="navbar-item">Productos</a>
+                <a href="dogs.html" class="navbar-item">Pedidos Personalizados</a>
+                <a href="#" class="navbar-item">Galeria</a>
+                <a href="#" class="navbar-item">Contactos</a>
+                <a href="#" class="navbar-item" type="button"><img
+                        src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="carrito" width="25px"></a>
             </nav>
         </div>
+    </header>
 
+    <section>
         <div id="banner">
-            <h1>Pastelitos <br> Nya</h1>
             <div id="boton">
                 Ver Catalogo
             </div>
         </div>
+    </section>
 
-    </header>
+    <section id="topsellers">
+        <h1>Productos más populares</h1>
+        <div id="topsell-content">
+            <div class="card">
+                <div class="card-body">
+                    <div class="horizontal-center">
+                        <img src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
+                            class="imagen-menu img-menu" alt="torta">
+                    </div>
+                    <div class="descripcion-container">
+                        <div class="descripcion horizontal-center">
+                            Torta Panqueque Chocolate Frambuesa
+                        </div>
+                        <div class="precio">
+                            <div class="porciones">
+                                <label for="porciones">Porciones:</label>
+                                <select name="porciones" id="porciones">
+                                    <option value="">15</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">35</option>
+                                </select>
+                            </div>
+                            <p>$35.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add">
+                    <button id=add-cart>Añadir al carro</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="horizontal-center">
+                        <img src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
+                            class="imagen-menu img-menu" alt="torta">
+                    </div>
+                    <div class="descripcion-container">
+                        <div class="descripcion horizontal-center">
+                            Torta Panqueque Chocolate Frambuesa
+                        </div>
+                        <div class="precio">
+                            <div class="porciones">
+                                <label for="porciones">Porciones:</label>
+                                <select name="porciones" id="porciones">
+                                    <option value="">15</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">35</option>
+                                </select>
+                            </div>
+                            <p>$35.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add">
+                    <button id=add-cart>Añadir al carro</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="horizontal-center">
+                        <img src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
+                            class="imagen-menu img-menu" alt="torta">
+                    </div>
+                    <div class="descripcion-container">
+                        <div class="descripcion horizontal-center">
+                            Torta Panqueque Chocolate Frambuesa
+                        </div>
+                        <div class="precio">
+                            <div class="porciones">
+                                <label for="porciones">Porciones:</label>
+                                <select name="porciones" id="porciones">
+                                    <option value="">15</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">35</option>
+                                </select>
+                            </div>
+                            <p>$35.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add">
+                    <button id=add-cart>Añadir al carro</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="horizontal-center">
+                        <img src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
+                            class="imagen-menu img-menu" alt="torta">
+                    </div>
+                    <div class="descripcion-container">
+                        <div class="descripcion horizontal-center">
+                            Torta Panqueque Chocolate Frambuesa
+                        </div>
+                        <div class="precio">
+                            <div class="porciones">
+                                <label for="porciones">Porciones:</label>
+                                <select name="porciones" id="porciones">
+                                    <option value="">15</option>
+                                    <option value="">20</option>
+                                    <option value="">30</option>
+                                    <option value="">35</option>
+                                </select>
+                            </div>
+                            <p>$35.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add">
+                    <button id=add-cart>Añadir al carro</button>
+                </div>
+            </div>
+        </div>
+        <div class="boton horizontal-center">
+            <a href="menu.html" type="button">Todos los productos</a>
+        </div>
+
+
+
+    </section>
+
     <section id="about">
-        <h1>Sobre nosotros</h1>
-        <div id="linea"></div>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ea corrupti, sequi, maiores similique
-            obcaecati voluptatem repellendus minima voluptates debitis perspiciatis facere? Ad adipisci, ex quos ea
-            dignissimos iste ducimus? </p>
-        <button>MORE ABOUT US</button>
+        <h1>Nuestra Tienda</h1>
+        <div class="centro">
+            <div id="about_content">
+                <p>En Sweet Kirby, nuestra pasión es llevar la dulzura y la alegría del universo de Kirby directamente
+                    a tu vida a través de deliciosos postres y creaciones irresistibles. Cada bocado está lleno de amor
+                    y magia, inspirado por el encanto único de Kirby y sus amigos. Te invitamos a visitar nuestra tienda
+                    en: </p>
+                <p style="color: blueviolet; font-weight: bold;">123 Calle Dreamland,
+                    Ciudad Dulce, Mundo Pastelero </p>
+                <p>¡Déjanos endulzar tus momentos más especiales con la magia de Sweet Kirby!</p>
+
+
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1659.7784404890654!2d-71.21541704675138!3d-33.69453635824638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966255eae610cb2f%3A0xc3fdb55ead51065b!2sDuoc%20UC%3A%20Sede%20Melipilla!5e0!3m2!1ses!2scl!4v1712368111405!5m2!1ses!2scl"
+                    width="600" height="525"
+                    style="border-radius:40px; border-color: transparent; box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="boton horizontal-center">
+            <a href="" type="button">Realiza tu pedido</a>
+        </div>
     </section>
 
-    <section id="menu">
-        <h1></h1>
-        <h2>MIAU</h2>
-    </section>
-    <section id="carrito">
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-messenger"></i></i></a>
+            </div>
 
-    </section>
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Nuestra Tienda</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                SweetKirby Copyright © 2024 Misery - All rights reserved
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-XXXXX" crossorigin="anonymous"></script>
+
+
 </body>
+
+
+
 
 </html>
