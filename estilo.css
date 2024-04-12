@@ -616,7 +616,7 @@ body {
     border: 0.3vh solid hsl(0, 0%, 89%);
     height: 40vh;
     width: 98vh;
-    background-color: #f8ecf2;
+    background-color: #e9f5dc;
     border-radius: 2vh;
 }
 
@@ -744,7 +744,7 @@ body {
     width: 7.2vh;
     border-radius: 0.3vh;
     border: 0.25vh solid #cecece;
-    background-color: #f8ecf2;
+    background-color: white;
     font-size: x-large;
     font-weight: bolder;
     margin-right: 2vh;
@@ -770,7 +770,7 @@ body {
     border: 0.3vh solid hsl(0, 0%, 89%);
     height: 40vh;
     width: 70vh;
-    background-color: #f8ecf2;
+    background-color: #e9f5dc;
     border-radius: 2vh;
 }
 .contenido-resumen{
@@ -803,7 +803,7 @@ body {
 }
 
 .input-promo{
-    background-color: #f8ecf2;
+    background-color: white;
     border-top: 0.090vh solid #cecece; 
     border-left: 0.090vh solid #cecece; 
     border-bottom: 0.090vh solid #cecece; 
@@ -946,7 +946,7 @@ body {
 
 .div-pedidos {
     display: flex;
-    background-color: #f9edc5;
+    background-color: beige;
     height: 77vh;
     width: 100%;
     flex-direction: column;
@@ -961,6 +961,12 @@ body {
     flex-direction: column;
     gap: 1.5vh;
     justify-content: center;
+    
+    background-image: url('kirby\ sombra.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: 66% center;
+    background-blend-mode: overlay;
 }
 
 .formulario-pedidos > label{
@@ -1076,7 +1082,8 @@ label  > .formulario-pedidos5{
 
 #modal{
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    background-color: beige;  
 }
 
 
