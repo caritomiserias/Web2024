@@ -18,24 +18,43 @@
             <nav id="navbar-brand">
                 <a href="index.html#about" class="navbar-item">Nuestra Tienda</a>
                 <a href="menu.html" target="_self" class="navbar-item">Productos</a>
-                <a href="dogs.html" class="navbar-item">Pedidos Personalizados</a>
+                <a href="pedidos.html" target="_self" class="navbar-item">Pedidos Personalizados</a>
                 <a href="galeria.html" target="_self" class="navbar-item">Galeria</a>
                 <a href="#" class="navbar-item">Contactos</a>
                 <div class="cart-container">
                     <a href="carrito.html" class="navbar-item" type="button">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="carrito" width="25px">
-                    <div class="buy-card">
-                        <ul class="nav-card">
-                            <li><img class="imagen-carrito"
-                                    src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
-                                    alt="torta"></li>
-                            <li>Torta Panqueque Chocolate Frambuesa</li>
-                            <li>35.000</li>
-                            <li>X1</li>
-                        </ul>
-                        <button>VER CARRITO</button>
-                    </div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="carrito" width="25px" />
+                        <div class="buy-card">
+                            <table class="table-buy-card">
+                                <tr>
+                                    <th></th>
+                                    <th class="buy-card-title">Producto</th>
+                                    <th class="buy-card-title">Precio</th>
+                                    <th class="buy-card-title">Cantidad</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="https://i.pinimg.com/736x/f5/2c/f6/f52cf6d2475616df2dcd3d37cba0c3e0.jpg" class="imagen-compra2" alt="torta" />
+                                    </td>
+                                    <td>
+                                        <span>Torta Oreo</span>
+                                    </td>
+                                    <td>
+                                        <span>$28.000</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <img class="basura-rosada-carrito" src="basurerorosa.png" alt="basurero rosado" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <button>Ver Carrito</button>
+                        </div>
                     </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -48,7 +67,7 @@
                 </div>
                 <div class="producto-carrito">
                     <img src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
-                        class="imagen-carrito" alt="torta">
+                        class="imagen-compra" alt="torta">
                 </div>
                 <div class="info-carrito">
                     <h1>Torta Panqueque Chocolate Frambuesa</h1>
@@ -56,8 +75,7 @@
                     <input type="number" id="quantity" name="quantity" min="1" value="1">
                     <i>x</i>
                     <h3>$35.000</h3>
-                    <p>Cantidad de Personas:</p>
-                    <p>15</p>
+                    <p>Cantidad de Personas: 15</p>
                     <img class="basura-rosada" src="basurerorosa.png" alt="basurero rosado">
                 </div>
             </div>

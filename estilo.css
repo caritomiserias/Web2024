@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Petit+Formal+Script&family=Redressed&display=swap');
 
 /* ---------------------------------------------------------------------------INDEX--------------------------------------------------------------------------- */
-
 @keyframes derecha {
     0% {
         transform: translateX(400px);
@@ -35,12 +34,12 @@
     width: fit-content;
 }
 
-.boton{
+.boton {
     height: fit-content !important;
     margin: 0 auto;
 }
 
-.add>button{
+.add > button{
     width: fit-content !important;
     height: fit-content !important;
     padding: 7px 15px;
@@ -51,15 +50,12 @@
     line-height: 1;
 }
 
-
-
 #about {
     height: 90vh;
     display: flex;
-    justify-content: CENTER;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    row-gap: 25px;
     background-color: #f8ecf2;
     background-image: url('kirby\ sombra.png');
     background-repeat: no-repeat;
@@ -73,29 +69,29 @@
 .centro{
     display: flex;
     height: calc(70vh - 20%);
+    justify-content: center;
+    align-items: center;
 }
 
 .centro > div{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: 51%;
     padding: 3%;
     height: 45vh;
-
 }
 
 #about>h1 {
     margin: 1%;
     width: 100%;
     text-align: center;
-    height: 40px;
-    line-height: 5vh;
+    height: 10vh;
+    line-height: 7vh;
     font-size: 2.5rem;
     color: #825E21;
     font-family: "Concert One", sans-serif !important;
     font-weight: 400;
-    margin-bottom: -19px;
 }
 
 #about_content{
@@ -122,11 +118,10 @@
     background-color: #e974cf;
     border: 2px #e974cf solid;
     border-radius: 20px;
-    padding: 8px 18px;
-    height: 3vh;
-    width: 18vh;
+    padding: 3px 18px;
+    margin-top:7vh;
+    width: 21vh;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    
 }
 
 .boton > a {
@@ -136,7 +131,10 @@
     color: #fafaee;
 }
 
-
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
 
 #banner {
     background-image: url('fondo\ 1.png');
@@ -154,17 +152,15 @@
 
 .carousel-item > img{
     height: 60vh;
-    
     width: auto;
     margin: 0 auto;
 }
 
-#banner>#title {
+#banner > #title {
     -webkit-text-stroke: 1px black;
     color: #ffffff;
     font-size: 3rem;
     text-transform: uppercase;
-
     margin-left: 0vw;
 }
 
@@ -182,8 +178,8 @@
     margin: 2%;
     width: 100%;
     text-align: center;
-    height: 40px;
-    line-height: 5vh;
+    height: 6vh;
+    line-height: 3vh;
     font-size: 2.5rem;
     color: #825E21;
     font-family: "Concert One", sans-serif !important;
@@ -193,80 +189,74 @@
 }
 
 #topsell-content{
-    height: 53vh;
+    height: 43vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     FLEX-WRAP: wrap;
     margin: 0 auto;
+    align-items: center;
 }
 
 
-
-
-
-
-body{
+body {
     margin:0;
     overflow-x:hidden;
-    }
+}
     
-    .footer{
+.footer{
     background:#a5d2f2;
     padding:30px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
-    }
+}
     
-    .footer .row{
+.footer .row{
     width:100%;
     margin:1% 0%;
     padding:0.6% 0%;
     color:gray;
     font-size:0.8em;
-    }
+}
     
-    .footer .row a{
+.footer .row a{
     text-decoration:none;
     color:gray;
     transition:0.5s;
-    }
+}
     
-    .footer .row a:hover{
+.footer .row a:hover{
     color:#fff;
-    }
+}
     
-    .footer .row ul{
+.footer .row ul{
     width:100%;
-    }
+}
     
-    .footer .row ul li{
+.footer .row ul li{
     display:inline-block;
     margin:0px 30px;
-    }
+}
     
-    .footer .row a i{
+.footer .row a i{
     font-size:2em;
     margin:0% 1%;
-    }
+}
     
-    @media (max-width:720px){
+@media (max-width:720px){
     .footer{
-    text-align:left;
-    padding:5%;
+        text-align:left;
+        padding:5%;
     }
     .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
+        display:block;
+        margin:10px 0px;
+        text-align:left;
     }
     .footer .row a i{
-    margin:0% 3%;
+        margin:0% 3%;
     }
 }
-
-
-
 
 /* -----------------------------------------------------------------------------------GLOBAL--------------------------------------------------------------------------- */
 
@@ -279,19 +269,16 @@ body {
     background-color: #fafaee;
 }
 
-
-
-* :not(#title>a) {
+*:not(#title > a) {
     font-family: "Comic Neue";
     font-style: normal;
     scroll-behavior: smooth;
 }
 
-#title>a {
+#title > a {
     text-decoration: none;
     color: black;
 }
-
 
 #navbar {
     display: flex;
@@ -339,7 +326,7 @@ body {
     font-weight: lighter;
 }
 
-#navbar-brand>a {
+#navbar-brand > a {
     align-items: center;
     vertical-align: middle;
     justify-content: end;
@@ -353,7 +340,7 @@ body {
     margin-left: 10%;
 }
 
-/* ---------------------------------------------------------------------------MENÚ--------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------MENÚ--------------------------------------------------------------------------- */
 
 #menu {
     display: flex;
@@ -363,7 +350,7 @@ body {
     margin: 0 auto;
 }
 
-#menu>h1 {
+#menu > h1 {
     width: 100%;
     text-align: center;
     height: 0vh;
@@ -385,7 +372,6 @@ body {
     max-width: 100%;
     height: auto;
 }
-
 
 .menu {
     width: 30%;
@@ -419,7 +405,6 @@ body {
 
 .precio-container {
     width: 50%;
-
 }
 
 .precio {
@@ -429,23 +414,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 10px;
+    column-gap: 3vh;
 }
 
 .card {
     border-radius: 17px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    height: 39vh;
+    height: 43vh;
     width: 22%;
+    /* margin-bottom: 2%; */
     background-color: #ffffff;
 }
 
+#section2 > .card{
+    margin-bottom: 2%;
+}
+
 #navbar-brand a:hover {
-    border-radius: 15px;
+    border-radius: 1vh;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
-
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -493,16 +482,22 @@ body {
     text-align: left;
 }
 
+
 .add{
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: -4%;
+    margin-top: -1.5vh;
 }
 
-.descripcion-container button{  /*CODIGO NUEVO*/
+#section2 > .card > .add {
+    margin-top: -0.5vh !important;
+}
+
+/* ----------------------------------------------------------------------------------CARRITO-------------------------------------------------------------------------- */
+.descripcion-container button{  
     padding: 1vh;
     width: 13vh;
     background-color: #be57d3;
@@ -515,7 +510,7 @@ body {
     cursor:pointer;
 }
 
-.descripcion-container button:hover{  /*CODIGO NUEVO*/
+.descripcion-container button:hover{  
     background-color: #9c3faf;
     transition: all .3s;
 }
@@ -525,24 +520,23 @@ body {
     border-color: transparent;
     border-radius: 15px;
     background-color: #e974cf;
-    height: 3VH;
-    width: 15VH;
     color: white;
 }
 
 .buy-card {
     display: none;
     position: absolute;
+    z-index: 1;
     top: calc(100% + 10px);
     right: 0;
-    width: 400px;
-    background-color: white;
+    width: 30vw;
+    background-color: beige;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 1vh;
     padding: 10px;
-    transition: opacity 0.3s ease-in-out; /* Cambia la transición para que funcione con opacidad */
-    opacity: 0; /* Inicialmente establece la opacidad en 0 para que esté oculto */
-    pointer-events: none; /* Evita que los eventos del mouse se activen en .buy-card */
+    transition: opacity 0.3s ease-in-out; 
+    opacity: 0; 
+    pointer-events: none; 
 }
 
 .navbar-item {
@@ -550,16 +544,17 @@ body {
 }
 
 .navbar-item:hover .buy-card {
-    display: block;
-    opacity: 1; /* Cambia la opacidad a 1 cuando el mouse está sobre .navbar-item */
-    pointer-events: auto; /* Habilita los eventos del mouse en .buy-card cuando se muestra */
+    display: block; 
+    opacity: 1; 
+    pointer-events: auto; 
 }
 
 .nav-card {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+   
 }
 
 .buy-card button {
@@ -568,24 +563,26 @@ body {
     background-color: #be57d3;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 1vh;
+    font-weight: bold;
     cursor: pointer;
     outline: none;
-    margin-top: auto; /* Mueve el botón hacia abajo */
+    margin-top: auto; 
 }
 
 .buy-card button:hover {
     background-color: #2f8f80;
 }
 
-.nav-card .imagen-carrito{
+.nav-card .imagen-carrito {
     min-width: 70px;
     height: 80px;
     border: none;
     border-radius: 7px;;
 }
+
 .nav-card li{
-    font-size: 110%;
+    font-size: small;
     font-weight: bolder;
     margin-right: 2vh;
     justify-content: center;
@@ -594,6 +591,7 @@ body {
 
 .cart-container {
     position: relative;
+    margin-right: 1.5vw;
 }
 
 .cart-container:hover .buy-card {
@@ -603,28 +601,22 @@ body {
 }
 
 #banner2 {
-    height: 100vh;
+    height: 88vh;
     display: flex;
-    /* flex-wrap: wrap; */
-    align-content: space-between;
-    background-color: #f8ecf2;
-    background-image: url('kirby\ sombra.png');
-    background-repeat: no-repeat;
-    background-size: 65vh;
-    background-position: 5% center;
-    background-blend-mode: overlay;
+    background-color: beige;
     justify-content: space-evenly;
 }
 
-/***********CARRITO***********/
+/* ----------------------------------------------------------------------------------CARRITO-------------------------------------------------------------------------- */
 .menu-carrito{
     margin-top: 20vh;
     display: flex;
     flex-wrap: wrap;
     border: 0.3vh solid hsl(0, 0%, 89%);
     height: 40vh;
-    width: 130vh;
-    background-color: beige;
+    width: 110vh;
+    background-color: #f8ecf2;
+    border-radius: 2vh;
 }
 
 #titulo-carro {
@@ -656,20 +648,51 @@ body {
 }
 
 .imagen-carrito{
-    height: 25vh;
     width: 26vh;
-    border-radius: 10px;
+}
 
+.imagen-compra{
+    display: flex;
+    height: 25vh;
+}
+
+.imagen-compra2 {
+    max-height: 11.5vh;
+    width: 10rem;
+    margin-bottom: 10px;
+    object-fit: cover;
+    max-width: 90%;
+    height: auto;
+    margin-right: -2rem;
+}
+
+.table-buy-card {
+    padding-top: 2%;
+    border: none;
+}
+
+.table-buy-card th,
+.table-buy-card td:has(>span) {
+    text-align: center;
+}
+
+.buy-card-title, .table-buy-card > td {
+    padding-right:1.5rem;
+}
+
+.basura-rosada-carrito {
+    height: 3vh;
+    width: 1.5vw;
 }
 
 .info-carrito{
     height: 25vh;
-    width: 96vh;
-    margin-left:5vh ;
+    width: 58vh;
+    margin-left: 22vh;
     padding-left: 1vh;
 }
 
-    .info-carrito h1{
+.info-carrito h1{
     font-size: large;
     font-weight: bolder;
     width: 24vh;
@@ -699,8 +722,8 @@ body {
     font-size: medium;
     font-weight: thin;
     text-align: left;
-    display: inline-block; /* Cambia de display:block a display:inline-block */
-    margin-right:1vh; /* Añade un poco de margen derecho para separar los elementos */
+    display: inline-block; 
+    margin-right:1vh; 
 }
 
 .info-carrito p:last-child {
@@ -710,16 +733,20 @@ body {
     text-align: center;
 }
 
+.info-carrito > p {
+    display: flex;
+    
+}
+
 .info-carrito input[type="number"] {
     display: inline-block;
     height: 4vh;
     width: 7.2vh;
     border-radius: 0.3vh;
     border: 0.25vh solid #cecece;
-    background-color: beige;
+    background-color: #f8ecf2;
     font-size: x-large;
     font-weight: bolder;
-    margin-left:  20vh;
     margin-right: 2vh;
 }
 
@@ -732,10 +759,10 @@ body {
 .basura-rosada{
     height: 3vh;
     width: 3vh;
-    margin-left: 65vh;    
+    margin-left: 50vh;   
 }
 
-/***********RESUMEN DE PEDIDO***********/
+/* -------------------------------------------------------------------------------RESUMEN PEDIDO----------------------------------------------------------------------- */
 .resumen-carrito{
     margin-top: 20vh;
     display: flex;
@@ -743,7 +770,8 @@ body {
     border: 0.3vh solid hsl(0, 0%, 89%);
     height: 40vh;
     width: 70vh;
-    background-color: beige;
+    background-color: #f8ecf2;
+    border-radius: 2vh;
 }
 .contenido-resumen{
     display: flex;
@@ -775,7 +803,7 @@ body {
 }
 
 .input-promo{
-    background-color: beige;
+    background-color: #f8ecf2;
     border-top: 0.090vh solid #cecece; 
     border-left: 0.090vh solid #cecece; 
     border-bottom: 0.090vh solid #cecece; 
@@ -808,6 +836,7 @@ body {
     min-width: 16vh;
     border-color: #9c3faf;
     margin: 0;
+    border-radius: 1vh;
 }
 
 .clase-input-boton button:hover{
@@ -847,12 +876,13 @@ body {
     border-radius: 1vh;
     height: 6vh;
     min-height: 5vh;
-    width: 67vh;
+    width: 35vh;
     min-width: 16vh;
     border-color: #9c3faf;
     margin-top: 1vh;
+    font-weight: bold;
+    font-size: medium;
 }
-
 
 .carousel-item > img{
     height: 60vh;
@@ -860,3 +890,195 @@ body {
     width: auto;
     margin: 0 auto;
 }
+
+/* -----------------------------------------------------------------------------------GALERIA--------------------------------------------------------------------------- */
+#foto-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery {
+    border: 3px solid #acceef;
+}
+
+.gallery:hover {
+    border: 3px solid #ff80c6;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#encabezado-galeria>h1 {
+    margin: 2%;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 5vh;
+    font-size: 2.5rem;
+    color: #825E21;
+    font-family: "Concert One", sans-serif !important;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+/* ---------------------------------------------------------------------------PEDIDOS PERSONALIZADOS------------------------------------------------------------------- */
+#banner3 {
+    height: 70vh;
+    display: flex;
+    align-content: space-between;
+    background-color: #f8ecf2;
+    background-repeat: no-repeat;
+    background-size: 65vh;
+    background-position: 5% center;
+    background-blend-mode: overlay;
+    justify-content: space-evenly;
+}
+
+.div-pedidos {
+    display: flex;
+    background-color: #f9edc5;
+    height: 77vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.formulario-pedidos{
+    display: flex;
+    background-color: beige;
+    height: 41vh;
+    width: 172vh;
+    padding: 1vh;
+    flex-direction: column;
+    gap: 1.5vh;
+    justify-content: center;
+}
+
+.formulario-pedidos > label{
+    color: #bcb9b9;
+    font-size: medium;
+    height: 1vh;
+}
+
+.formulario-pedidos input{
+    width: 68vh !important;
+    height: 3.5vh !important;
+}
+
+
+.formulario-pedidos2{
+    display: flex;
+    width: 25vh;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.formulario-pedidos2 label{
+    text-align: center;
+    font-size: 2vh;
+}
+.formulario-pedidos2 select{
+    height: 4.2vh;
+    border-radius: 1vh;
+}
+
+
+.formulario-pedidos3{
+    display: flex;
+    width: 25vh;
+    flex-direction: column;
+    gap: 2vh;
+
+}
+
+.formulario-pedidos3 label{
+    gap: 2vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.form-check{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.formulario-pedidos4{
+    display: flex;
+    width: 25vh;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.formulario-pedidos4 > label{
+    text-align: center;
+    font-size: 2vh;
+}
+
+
+label  > .formulario-pedidos5{
+    font-size: 2vh;
+    width: 15vh;
+}
+
+.formulario-pedidos5{
+    display: flex;
+    width: 25vh;
+    flex-direction: column;
+    gap: 1vh;
+
+}
+
+.formulario-pedidos5 > label{
+    text-align: center;
+    font-size: 2vh;
+}
+
+.info-personal{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+
+.info-torta{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: beige;
+    width: 100%;
+    padding: 1vh;
+    column-gap: 8vh;
+}
+.titulo-perso{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.titulo-perso > h4 {
+    font-weight: bolder;
+    color: #979797;
+}
+
+.contenedor-info-torta{
+    display: flex;
+    justify-content: center;
+}
+
+#modal{
+    display: flex;
+    justify-content: center;  
+}
+
+
+
+
