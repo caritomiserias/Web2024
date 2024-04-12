@@ -1,25 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    <div id="contenedor1">
-
-        <h1>Waddlesteleria </h1>
-
-        <nav>
-            <a href="#about">Sobre nosotros</a>
-            <a href="menu.html" target="_self">Menu</a>
-            <a href="dogs.html">Pedidos</a>
-            <a href="carrito.html">Carrito</a>
-            <a href="#">Ubicacion</a>
-            <a href="#">Galeria</a>
-            <a href="#">Contactos</a>
-
-        </nav>
-    </div>
+    <header>
+        <div id="navbar">
+            <div id="logotitle">
+                <h1 id="title"><a href="index.html">SweetKirby</a></h1>
+                <img src="kirby1mini.png" alt="logo.png" id="logo">
+            </div>
+            <nav id="navbar-brand">
+                <a href="index.html#about" class="navbar-item">Nuestra Tienda</a>
+                <a href="menu.html" target="_self" class="navbar-item">Productos</a>
+                <a href="dogs.html" class="navbar-item">Pedidos Personalizados</a>
+                <a href="galeria.html" target="_self" class="navbar-item">Galeria</a>
+                <a href="#" class="navbar-item">Contactos</a>
+                <div class="cart-container">
+                    <a href="carrito.html" class="navbar-item" type="button">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="carrito" width="25px">
+                    <div class="buy-card">
+                        <ul class="nav-card">
+                            <li><img class="imagen-carrito"
+                                    src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
+                                    alt="torta"></li>
+                            <li>Torta Panqueque Chocolate Frambuesa</li>
+                            <li>35.000</li>
+                            <li>X1</li>
+                        </ul>
+                        <button>VER CARRITO</button>
+                    </div>
+                    </a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="banner2">
+            <div class="menu-carrito">
+                <div id=titulo-carro>
+                    <img src="carritorosa.png" alt="carrito rosado">
+                    <h1>Carrito de compras</h1>
+                </div>
+                <div class="producto-carrito">
+                    <img src="https://strindberg.cl/wp-content/uploads/elementor/thumbs/sub-categoria-merengue-1-oshpbntummv81vpjq0aewp4ruyyn2tqfnpigilt5yo.jpg"
+                        class="imagen-carrito" alt="torta">
+                </div>
+                <div class="info-carrito">
+                    <h1>Torta Panqueque Chocolate Frambuesa</h1>
+                    <h2>$35.000</h2>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <i>x</i>
+                    <h3>$35.000</h3>
+                    <p>Cantidad de Personas:</p>
+                    <p>15</p>
+                    <img class="basura-rosada" src="basurerorosa.png" alt="basurero rosado">
+                </div>
+            </div>
+            <div class="resumen-carrito">
+                <div class="contenido-resumen">
+                    <h1>Resumen de tu pedido</h1>
+                    <h2>1 Producto</h2>
+                </div>
+                <div class="contenido-resumen2">
+                    <div class="input-group clase-input-boton">
+                        <input type="text" class="input-promo form-control" placeholder="Código promocional"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">Aplicar</button>
+                    </div>
+                </div>
+                <div class="contenido-resumen3">
+                    <div class="precio-total">
+                        <h2>Total:</h2>
+                        <h1>$35.000</h1>
+                    </div>
+                    <div class="boton-pago">
+                        <button type="button" class="btn btn-primary">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
