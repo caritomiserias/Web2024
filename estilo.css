@@ -1086,6 +1086,46 @@ label  > .formulario-pedidos5{
     background-color: beige;  
 }
 
+@media(max-width: 920px){
+    #navbar{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 18vh;
+    }
+
+    #navbar-brand > a {
+        margin-right: 0px;
+    }
+
+    .card{
+        width: 30%;
+    }
+}
+
+@media(max-width:630px){
+    #navbar-brand{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #navbar{
+        height: fit-content;
+        padding: 20px 0px;
+    }
+
+    #title{
+
+    }
+
+    .card{
+        width: 70%;
+    }
+
+    #section2{
+        row-gap: 3vh;
+    }
+}
+
 
 
 
