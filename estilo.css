@@ -1124,6 +1124,26 @@ label>.formulario-pedidos5 {
     background-color: beige;
 }
 
+.valido {
+ border: 1px greenyellow solid !important;
+}
+
+.no-valido {
+    border: 1px red solid !important;
+}
+
+#errornombre{
+    font-size: .7rem !important;
+    
+}
+
+.pos-error {
+    width: 68vh;
+    text-align: right;
+}
+
+/* -------------------------------------------------- RESPONSIVIDAD ------------------------------------------*/
+
 @media(max-width: 920px) {
     #navbar {
         flex-wrap: nowrap;
@@ -1162,4 +1182,8 @@ label>.formulario-pedidos5 {
     #section2 {
         row-gap: 3vh;
     }
+
+
 }
+
+
