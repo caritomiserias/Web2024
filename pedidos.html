@@ -70,7 +70,7 @@
     </header>
 
     <section>
-        <div id="encabezado-galeria">
+        <div id="encabezado-pedidop">
             <h1>Pedidos Personalizados</h1>
         </div>
     </section>
@@ -102,9 +102,34 @@
                             <div class="pos-error" >
                                 <p id="errorcorreo" class="texto-error">&nbsp;</p>
                             </div>
-
-                            
                     </div>
+                    <div class="formulario-pedidos6">
+                        <div class="espacio-form"></div>
+                        <form class="was-validated">
+                          <div class="mb-3">
+                            <label for="validationInput" class="form-label">Direccion de envio</label>
+                            <input type="text" class="form-control" id="validationInput" placeholder="Calle Generica #69" required pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$" disabled>
+                            <div class="invalid-feedback">
+                              Por favor ingrese una dirección como se muestra en el ejemplo.
+                            </div>
+                          </div>
+                          <div class="checkradios">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                                <label class="form-check-label" for="validationFormCheck2">Reparto a domicilio</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                                <label class="form-check-label" for="validationFormCheck3">Retiro en tienda</label>
+                              </div>
+                          </div>
+
+                        </form>
+                        <div class="info-extra">
+                            <label for="exampleFormControlTextarea1" class="form-label">Informacion adicional</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Opcional"></textarea>
+                          </div>
+                      </div>
                 </div>
                 <div class="contenedor-info-torta">
                     <div class="info-torta">
@@ -232,6 +257,25 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
         <script src="funciones.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const habilitarCampo = document.getElementById('validationFormCheck2');
+              const deshabilitarCampo = document.getElementById('validationFormCheck3');
+              const campoInput = document.getElementById('validationInput');
+          
+              habilitarCampo.addEventListener('change', function() {
+                if (habilitarCampo.checked) {
+                  campoInput.disabled = false;
+                }
+              });
+          
+              deshabilitarCampo.addEventListener('change', function() {
+                if (deshabilitarCampo.checked) {
+                  campoInput.disabled = true;
+                }
+              });
+            });
+          </script>
 </body>
 
 
