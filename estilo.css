@@ -1123,7 +1123,7 @@ label>.formulario-pedidos5 {
 
 .info-personal {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: beige;
 }
 
@@ -1131,7 +1131,7 @@ label>.formulario-pedidos5 {
     display: flex;
     justify-content: space-evenly;
     background-color: beige;
-    width: 100%;
+    width: 172vh;
     padding: 1vh;
     column-gap: 8vh;
 }
@@ -1288,7 +1288,8 @@ label>.formulario-pedidos5 {
 
 }
 
-@media(max-width: 1275px) {
+
+@media(max-width: 1090px) {
     .info-personal {
         display: flex;
         background-color: beige;
