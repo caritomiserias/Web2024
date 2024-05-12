@@ -36,19 +36,10 @@
     width: fit-content;
 }
 
-.boton {
-    height: fit-content !important;
-    margin: 0 auto;
-}
-
 .add>button {
     width: fit-content !important;
     height: fit-content !important;
     padding: 7px 15px;
-    line-height: 1;
-}
-
-.boton>a {
     line-height: 1;
 }
 
@@ -115,6 +106,8 @@
 
 
 .boton {
+    height: fit-content !important;
+    margin: 0 auto;
     background-color: #e974cf;
     border: 2px #e974cf solid;
     border-radius: 20px;
@@ -123,12 +116,30 @@
     width: 20vh;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
-
 .boton>a {
     font-weight: bolder;
     text-decoration: none;
     margin: auto 0;
     color: #fafaee;
+    line-height: 1;
+}
+.boton2 {
+    height: fit-content !important;
+    margin: 0 auto;
+    background-color: #e974cf;
+    border: 2px #e974cf solid;
+    border-radius: 20px;
+    padding: 3px 18px;
+    margin-top: 3vh;
+    width: 20vh;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.boton2>a {
+    font-weight: bolder;
+    text-decoration: none;
+    margin: auto 0;
+    color: #fafaee;
+    line-height: 1;
 }
 
 p {
@@ -201,6 +212,12 @@ p {
 body {
     margin: 0;
     overflow-x: hidden;
+}
+
+.mapa{
+    width:590px;
+    height:440px;
+
 }
 
 .footer {
@@ -474,7 +491,7 @@ h3 > #reviews{
     border-radius: 17px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     height: 50vh;
-    width: 22%;
+    width: 41vh;
     background-color: #ffffff;
 }
 
@@ -1414,8 +1431,6 @@ label>.formulario-pedidos5 {
     #section2 {
         row-gap: 3vh;
     }
-
-
 }
 
 
@@ -1502,6 +1517,28 @@ label>.formulario-pedidos5 {
         margin-bottom: 3vh;
         margin-top: 4vh;
     }
+}
+
+    @media(max-width: 1350px) {
+        #topsell-content {
+            height: 64vh;
+            width: 122vh;
+            gap: 6vh;
+            display: flex;
+            justify-content: center;
+            FLEX-WRAP: wrap;
+            margin: 0 auto;
+            margin-top: 8vh;
+            align-items: center;
+            flex-direction: unset;
+        }
+        #topsellers {
+            height: 141vh;
+        }
+        .boton {
+            margin-top: 50vh;
+        }
+    }
 
     @media(max-width: 1250px) {
         #banner2 {
@@ -1510,8 +1547,62 @@ label>.formulario-pedidos5 {
             justify-content: center;
             align-items: center;
         }
- 
-
     }
     
+    @media(max-width: 995px){
+        #topsell-content {
+        width: 41vh;
+        }
+
+        #topsellers {
+            height: 252vh;
+        }
+
+        .boton{
+            margin-top: 160vh;
+        }
+
+        .boton2 {
+            margin-top: 43vh;
+                }
+        .centro {
+            flex-direction: column;
+        }
+        #about {
+            height: 127vh;        }
+        #about>h1 {
+            margin-top: -1vh;        }
+        #about_content {
+            margin-top: 34vh;        }
+    }
+
+    @media(max-width: 920px){
+    #index{
+        width: 100%;
+    }
+    }
+
+@media(max-width: 900px){
+    .centro {
+        height: 85vh;
+    }
+    #about {
+        height: 150vh;
+    }
+    #about>h1 {
+        margin-top: 3vh;
+    }
+    .boton2 {
+        margin-top: 33vh;
+    }
 }
+
+@media(max-width: 720px){
+    .footer .row ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+}
+
+
