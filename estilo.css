@@ -264,20 +264,20 @@ body {
     }
 }
 
-#reviews{
+#reviews {
     width: 100%;
     height: 48vh;
     background-color: #fafaee;
     display: none;
 }
 
-#reviews-content{
+#reviews-content {
     display: flex;
     flex-direction: row;
     width: 100%;
-   align-items: center;
-   justify-content: space-around;
-   row-gap: 60%;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 60%;
 }
 
 #reviews>h1 {
@@ -289,9 +289,15 @@ body {
     display: flex;
 }
 
-#paula{
+#paula {
+    margin-top: 2vh;
+    padding: 1vh;
     width: 32%;
-    height: 26vh;
+    height: 20vh;
+}
+
+#name1,#name2,#name3{
+    font-weight: bold;
 }
 
 
@@ -388,11 +394,11 @@ body {
     justify-content: space-around;
     text-align: center;
     margin: 0 auto;
-    
-    
+
+
 }
 
-h3  {
+h3 > #reviews{
     font-family: "Concert One", sans-serif !important;
     font-size: large;
     color: grey;
@@ -494,6 +500,8 @@ h3  {
 
 }
 
+
+
 h5>#filtro {
     display: flex;
     flex-wrap: wrap;
@@ -519,7 +527,7 @@ h5>#filtro {
     padding: 0 !important;
 }
 
-#paginacion{
+#paginacion {
     width: fit-content;
     height: fit-content;
     margin-top: 3vh;
@@ -688,14 +696,7 @@ h5>#filtro {
     background-color: beige;
     justify-content: space-evenly;
 }
-@media(max-width: 1250px) {
-    #banner2 {
-        height: 90vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
+
 
 /* ----------------------------------------------------------------------------------CARRITO-------------------------------------------------------------------------- */
 .menu-carrito {
@@ -705,7 +706,7 @@ h5>#filtro {
     border: 0.3vh solid hsl(0, 0%, 89%);
     height: 40vh;
     width: 98vh;
-    background-color: #e8dcff ;
+    background-color: #e8dcff;
     border-radius: 2vh;
 }
 
@@ -719,8 +720,9 @@ h5>#filtro {
     display: flex;
     align-items: center;
 }
-#titulo-carro>h1{
-color: #383737;
+
+#titulo-carro>h1 {
+    color: #383737;
 
 }
 
@@ -992,6 +994,7 @@ color: #383737;
     width: auto;
     margin: 0 auto;
 }
+
 @media(max-width: 1250px) {
     .resumen-carrito {
         margin-top: 1vh;
@@ -1001,16 +1004,19 @@ color: #383737;
         align-items: center;
         align-content: center;
     }
-    .menu-carrito{
+
+    .menu-carrito {
         margin-top: 1vh;
     }
-    .contenido-resumen2{
+
+    .contenido-resumen2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 }
+
 @media(max-width: 750px) {
     .resumen-carrito {
         margin-top: 1vh;
@@ -1020,31 +1026,36 @@ color: #383737;
         align-items: center;
         align-content: center;
     }
-    .menu-carrito{
+
+    .menu-carrito {
         margin-top: 1vh;
         display: flex;
         flex-wrap: wrap;
         border: 0.3vh solid hsl(0, 0%, 89%);
         height: 40vh;
         width: 75vh;
-        background-color: #e8dcff ;
+        background-color: #e8dcff;
         border-radius: 2vh;
     }
-    .producto-carrito{
+
+    .producto-carrito {
         height: 10vh;
         width: 7vh;
     }
-    .producto-carrito img{
+
+    .producto-carrito img {
         width: 75px;
         height: 75px;
     }
-    .contenido-resumen2{
+
+    .contenido-resumen2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 }
+
 /* -----------------------------------------------------------------------------------GALERIA--------------------------------------------------------------------------- */
 #foto-galeria {
     display: grid;
@@ -1396,10 +1407,6 @@ label>.formulario-pedidos5 {
         padding: 20px 0px;
     }
 
-    /* #title{
-
-    } */
-
     .card {
         width: 70%;
     }
@@ -1495,8 +1502,16 @@ label>.formulario-pedidos5 {
         margin-bottom: 3vh;
         margin-top: 4vh;
     }
-    
-    
+
+    @media(max-width: 1250px) {
+        #banner2 {
+            height: 90vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+
+    }
     
 }
-
