@@ -116,6 +116,7 @@
     width: 20vh;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
+
 .boton>a {
     font-weight: bolder;
     text-decoration: none;
@@ -123,6 +124,7 @@
     color: #fafaee;
     line-height: 1;
 }
+
 .boton2 {
     height: fit-content !important;
     margin: 0 auto;
@@ -134,6 +136,7 @@
     width: 20vh;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
+
 .boton2>a {
     font-weight: bolder;
     text-decoration: none;
@@ -214,9 +217,9 @@ body {
     overflow-x: hidden;
 }
 
-.mapa{
-    width:590px;
-    height:440px;
+.mapa {
+    width: 590px;
+    height: 440px;
 
 }
 
@@ -313,7 +316,9 @@ body {
     height: 20vh;
 }
 
-#name1,#name2,#name3{
+#name1,
+#name2,
+#name3 {
     font-weight: bold;
 }
 
@@ -415,10 +420,11 @@ body {
 
 }
 
-h3 > #reviews{
+div>h2 {
     font-family: "Concert One", sans-serif !important;
     font-size: large;
     color: grey;
+    font-size: x-large;
 }
 
 #mainH1 {
@@ -1397,42 +1403,71 @@ label>.formulario-pedidos5 {
 
 /* -------------------------------------------------- RESPONSIVIDAD ------------------------------------------*/
 
-@media(max-width: 920px) {
-    #navbar {
+@media (max-width: 1400px) {
+
+    #reviews-content {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         flex-wrap: nowrap;
-        flex-direction: column;
-        height: 18vh;
+        width: fit-content;
     }
 
-    #navbar-brand>a {
-        margin-right: 0px;
-    }
 
-    .card {
-        width: 30%;
-    }
-}
-
-@media(max-width:630px) {
-    #navbar-brand {
-        flex-direction: column;
+    #paula {
         height: fit-content;
     }
 
-    #navbar {
+    #reviews {
         height: fit-content;
-        padding: 20px 0px;
+
     }
 
-    .card {
-        width: 70%;
+    .img-fluid {
+        margin-bottom: 1vh;
+
     }
 
-    #section2 {
-        row-gap: 3vh;
+}
+
+
+@media(max-width: 1350px) {
+    #topsell-content {
+        height: 64vh;
+        width: 122vh;
+        gap: 6vh;
+        display: flex;
+        justify-content: center;
+        FLEX-WRAP: wrap;
+        margin: 0 auto;
+        margin-top: 8vh;
+        align-items: center;
+        flex-direction: unset;
+    }
+
+    #topsellers {
+        height: 141vh;
+    }
+
+    .boton {
+        margin-top: 50vh;
     }
 }
 
+@media(max-width: 1250px) {
+    #banner2 {
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media(max-width: 1090px) {
     .info-personal {
@@ -1519,85 +1554,84 @@ label>.formulario-pedidos5 {
     }
 }
 
-    @media(max-width: 1350px) {
-        #topsell-content {
-            height: 64vh;
-            width: 122vh;
-            gap: 6vh;
-            display: flex;
-            justify-content: center;
-            FLEX-WRAP: wrap;
-            margin: 0 auto;
-            margin-top: 8vh;
-            align-items: center;
-            flex-direction: unset;
-        }
-        #topsellers {
-            height: 141vh;
-        }
-        .boton {
-            margin-top: 50vh;
-        }
-    }
-
-    @media(max-width: 1250px) {
-        #banner2 {
-            height: 90vh;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    
-    @media(max-width: 995px){
-        #topsell-content {
+@media(max-width: 995px) {
+    #topsell-content {
         width: 41vh;
-        }
-
-        #topsellers {
-            height: 252vh;
-        }
-
-        .boton{
-            margin-top: 160vh;
-        }
-
-        .boton2 {
-            margin-top: 43vh;
-                }
-        .centro {
-            flex-direction: column;
-        }
-        #about {
-            height: 127vh;        }
-        #about>h1 {
-            margin-top: -1vh;        }
-        #about_content {
-            margin-top: 34vh;        }
     }
 
-    @media(max-width: 920px){
-    #index{
+    #topsellers {
+        height: 252vh;
+    }
+
+    .boton {
+        margin-top: 160vh;
+    }
+
+    .boton2 {
+        margin-top: 43vh;
+    }
+
+    .centro {
+        flex-direction: column;
+    }
+
+    #about {
+        height: 127vh;
+    }
+
+    #about>h1 {
+        margin-top: -1vh;
+    }
+
+    #about_content {
+        margin-top: 34vh;
+    }
+}
+
+
+
+@media(max-width: 920px) {
+
+    #index {
         width: 100%;
     }
+
+    #navbar {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 18vh;
     }
 
-@media(max-width: 900px){
+    #navbar-brand>a {
+        margin-right: 0px;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
+
+
+@media(max-width: 900px) {
     .centro {
         height: 85vh;
     }
+
     #about {
         height: 150vh;
     }
+
     #about>h1 {
         margin-top: 3vh;
     }
+
     .boton2 {
         margin-top: 33vh;
     }
 }
 
-@media(max-width: 720px){
+
+@media(max-width: 720px) {
     .footer .row ul {
         display: flex;
         flex-wrap: nowrap;
@@ -1606,3 +1640,22 @@ label>.formulario-pedidos5 {
 }
 
 
+@media(max-width:630px) {
+    #navbar-brand {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #navbar {
+        height: fit-content;
+        padding: 20px 0px;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    #section2 {
+        row-gap: 3vh;
+    }
+}
