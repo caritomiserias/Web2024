@@ -267,23 +267,6 @@ body {
     margin: 0 auto;
 }
 
-@media (max-width:720px) {
-    .footer {
-        text-align: left;
-        padding: 5%;
-    }
-
-    .footer .row ul li {
-        display: block;
-        margin: 10px 0px;
-        text-align: left;
-    }
-
-    .footer .row a i {
-        margin: 0% 3%;
-    }
-}
-
 #reviews {
     width: 100%;
     height: 48vh;
@@ -309,7 +292,7 @@ body {
     display: flex;
 }
 
-#paula {
+.paula {
     margin-top: 2vh;
     padding: 1vh;
     width: 32%;
@@ -602,7 +585,7 @@ h5>#filtro {
     height: 6vh;
 }
 
-#boton-index{
+#boton-index {
     width: 40.7vh;
 }
 
@@ -1017,70 +1000,12 @@ h5>#filtro {
 
 .carousel-item>img {
     height: 60vh;
-
     width: auto;
     margin: 0 auto;
 }
 
-@media(max-width: 1250px) {
-    .resumen-carrito {
-        margin-top: 1vh;
-        width: 98vh;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .menu-carrito {
-        margin-top: 1vh;
-    }
-
-    .contenido-resumen2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-}
-
-@media(max-width: 750px) {
-    .resumen-carrito {
-        margin-top: 1vh;
-        width: 75vh;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .menu-carrito {
-        margin-top: 1vh;
-        display: flex;
-        flex-wrap: wrap;
-        border: 0.3vh solid hsl(0, 0%, 89%);
-        height: 40vh;
-        width: 75vh;
-        background-color: #e8dcff;
-        border-radius: 2vh;
-    }
-
-    .producto-carrito {
-        height: 10vh;
-        width: 7vh;
-    }
-
-    .producto-carrito img {
-        width: 75px;
-        height: 75px;
-    }
-
-    .contenido-resumen2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
+#banner {
+    width: 100%;
 }
 
 /* -----------------------------------------------------------------------------------GALERIA--------------------------------------------------------------------------- */
@@ -1127,21 +1052,6 @@ h5>#filtro {
     font-family: "Concert One", sans-serif !important;
     font-weight: 400;
     margin-bottom: 19px;
-}
-
-@media(max-width: 920px) {
-    #foto-galeria {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-}
-
-@media(max-width:630px) {
-    #foto-galeria {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
 }
 
 /* ---------------------------------------------------------------------------PEDIDOS PERSONALIZADOS------------------------------------------------------------------- */
@@ -1406,51 +1316,213 @@ label>.formulario-pedidos5 {
 
 
 /* -------------------------------------------------- RESPONSIVIDAD ------------------------------------------*/
-
-@media (max-width: 1400px) {
+@media(min-width: 500px) and (max-width: 750px) {
+    .formulario-pedidos input {
+        width: 58vh !important;
+    }
 
     #reviews-content {
-        display: flex;
-        flex-direction: column;
-
+       flex-direction: column;
     }
 
-    .row {
+    .paula {
+        width: 20rem;
+        height: auto;
+    }
+
+    .reviews-wrapper{
         display: flex;
-        justify-content: center;
         flex-direction: row;
-        flex-wrap: nowrap;
-        width: fit-content;
     }
-
-
-    #paula {
-        height: fit-content;
+    .reviews-image-wrapper{
+        display: inline-block;
     }
-
-    #reviews {
-        height: fit-content;
-
+    .reviews-image-wrapper>img{
+        width: 100px;
+        height: 100px;
     }
-
-    .img-fluid {
-        margin-bottom: 1vh;
+    .reviews-body-wrapper{
 
     }
 
-}
+    .pos-error {
+        width: 58vh;
+    }
 
+    #encabezado-pedidop>h1 {
+        height: 210px;
+        margin-top: 3.5vh;
+    }
 
-@media(max-width: 1250px) {
-    #banner2 {
-        height: 90vh;
+    #navbar-brand {
         flex-direction: column;
+        height: fit-content;
+    }
+
+    #navbar {
+        height: fit-content;
+        padding: 20px 0px;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    #section2 {
+        row-gap: 3vh;
+    }
+
+    #foto-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer .row ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+
+    .resumen-carrito {
+        margin-top: 1vh;
+        width: 75vh;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        align-content: center;
+    }
+
+    .menu-carrito {
+        margin-top: 1vh;
+        display: flex;
+        flex-wrap: wrap;
+        border: 0.3vh solid hsl(0, 0%, 89%);
+        height: 40vh;
+        width: 75vh;
+        background-color: #e8dcff;
+        border-radius: 2vh;
+    }
+
+    .producto-carrito {
+        height: 10vh;
+        width: 7vh;
+    }
+
+    .producto-carrito img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .contenido-resumen2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media(max-width: 1090px) {
+@media(min-width: 760px) and (max-width: 995px) {
+    .centro {
+        height: 85vh;
+        flex-direction: column;
+    }
+
+    #about>h1 {
+        margin-top: 3vh;
+    }
+
+    #about {
+        height: 138vh;
+    }
+
+    #about>h1 {
+        margin-top: -1vh;
+    }
+
+
+    .boton2 {
+        margin-top: 33vh;
+    }
+
+    #index {
+        width: 100%;
+    }
+
+    #navbar {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 18vh;
+    }
+
+    #navbar-brand>a {
+        margin-right: 0px;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    #foto-galeria {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    #topsell-content {
+        width: 41vh;
+    }
+
+    #topsellers {
+        height: 252vh;
+    }
+
+    .boton {
+        margin-top: 160vh;
+    }
+
+    .boton2 {
+        margin-top: 43vh;
+    }
+
+    #about_content {
+        margin-top: 34vh;
+    }
+
+    #navbar-brand {
+        flex-basis: 77%;
+    }
+
+    #navbar-brand>a {
+        padding: 4px;
+    }
+
+    #navbar-brand>a {
+        padding: 8px;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1250px) {
+    #navbar-brand {
+        flex-basis: 78%;
+    }
+
+    #navbar-brand {
+        flex-basis: 79%;
+    }
+
     .info-personal {
         display: flex;
         background-color: beige;
@@ -1532,31 +1604,36 @@ label>.formulario-pedidos5 {
         margin-bottom: 3vh;
         margin-top: 4vh;
     }
-}
-@media (max-width: 630px) {
-    #encabezado-pedidop>h1 {
-        margin-top: 2vh;
+
+    .resumen-carrito {
+        margin-top: 1vh;
+        width: 98vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu-carrito {
+        margin-top: 1vh;
+    }
+
+    .contenido-resumen2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #banner2 {
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-@media (max-width: 573px) {
-    #encabezado-pedidop>h1 {
-        height: 210px;
-        margin-top: 4vh;
-    }
-}
-
-@media (max-width: 555px) {
-    .formulario-pedidos input {
-        width: 58vh !important;
-    }
-    .pos-error {
-        width: 58vh;
-    }
-}
-/* RESPONSIVIDAD INDEX */
-
-@media(max-width: 1350px) {
+@media(min-width: 1255px) and (max-width: 1400px) {
     #topsell-content {
         height: 64vh;
         width: 122vh;
@@ -1577,141 +1654,40 @@ label>.formulario-pedidos5 {
     .boton {
         margin-top: 50vh;
     }
-}
 
-@media(max-width: 995px) {
-    #topsell-content {
-        width: 41vh;
-    }
-
-    #topsellers {
-        height: 252vh;
-    }
-
-    .boton {
-        margin-top: 160vh;
-    }
-
-    .boton2 {
-        margin-top: 43vh;
-    }
-
-    .centro {
+    #reviews-content {
+        display: flex;
         flex-direction: column;
+
     }
 
-    #about {
-        height: 127vh;
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: fit-content;
     }
 
-    #about>h1 {
-        margin-top: -1vh;
+    .paula {
+        height: fit-content;
     }
 
-    #about_content {
-        margin-top: 34vh;
+    #reviews {
+        height: fit-content;
+
+    }
+
+    .img-fluid {
+        width: 74px;
+        height: 74px;
+        margin-bottom: 1vh;
     }
 }
+
+/* RESPONSIVIDAD INDEX */
+
 
 /*CARRUSEL*/
 
-@media(max-width: 920px) {
-
-    #index {
-        width: 100%;
-    }
-
-    #navbar {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        height: 18vh;
-    }
-
-    #navbar-brand>a {
-        margin-right: 0px;
-    }
-
-    .card {
-        width: 30%;
-    }
-}
-
-
-@media(max-width: 900px) {
-    .centro {
-        height: 85vh;
-    }
-
-    #about {
-        height: 150vh;
-    }
-
-    #about>h1 {
-        margin-top: 3vh;
-    }
-
-    .boton2 {
-        margin-top: 33vh;
-    }
-}
-
-
-@media(max-width: 720px) {
-    .footer .row ul {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-    }
-}
-
-
-@media(max-width:630px) {
-    #navbar-brand {
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    #navbar {
-        height: fit-content;
-        padding: 20px 0px;
-    }
-
-    .card {
-        width: 70%;
-    }
-
-    #section2 {
-        row-gap: 3vh;
-    }
-}
-
 /* RESPONSIVIDAD NAVBAR*/
-
-@media(max-width:1080px) {
-    #navbar-brand {
-
-        flex-basis: 79%;
-    }
-}
-
-@media(max-width:1012px) {
-    #navbar-brand {
-    
-        flex-basis: 78%;
-    }
-    }
-
-    @media(max-width:960px) {
-    #navbar-brand {
-        flex-basis: 77%;
-    }
-    #navbar-brand>a {
-        padding: 4px;
-    }
-    }
-
-    @media(max-width:920px) {
-        #navbar-brand>a {
-            padding: 8px;
-        }
-    }
